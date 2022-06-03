@@ -1,0 +1,150 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root{
+
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+
+.container{
+    height: 100vh;
+    background-image: url(./images/bg-pattern-top-desktop.svg),url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: -8% 0 , 115% 100%;
+    background-repeat: no-repeat;
+    /* padding: 100px 150px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-2{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 5rem;
+    margin-bottom: 50px;
+}
+
+.head-container{
+    width: 350px;
+    font-size: 22px;
+}
+
+.head-container h1{
+    margin-bottom: 22px;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+
+.head-container p{
+    color: var(--Dark-Grayish-Magenta);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.ratings{
+    border-radius: 10px;
+    width: 450px;
+    display: flex;
+    padding: 15px 30px;
+    background-color: var(--Light-Grayish-Magenta);
+    margin-bottom: 15px;
+    align-items: center;
+}
+.stars{
+    display: flex;
+    margin-right: 25px;
+}
+
+.ratings h4{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 500;
+}
+
+
+li{
+    list-style: none;
+    margin-right: 10px;
+}
+
+
+.description-container{
+    display: flex;
+
+}
+
+.description{
+    border-radius: 8px;
+    background-color: var(--Very-Dark-Magenta);
+    height: 220px;
+    width: 320px;
+    margin-right: 32px;
+    padding: 35px 30px;
+    font-size: 15px;
+}
+.description p{
+    color: var(--White);
+    line-height: 22px;
+    font-weight: 400;
+}
+.person{
+    font-size: 16px;
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.person h4{
+    margin-bottom: 5px;
+    color: var(--White);
+}
+.person p{
+    color: var(--Soft-Pink);
+}
+
+
+
+
+.person img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+.rtg-2{
+    transform: translateX(40px);
+}
+.rtg-3{
+    transform: translateX(80px);
+}
+
+
+.des-2{
+    transform: translateY(15px);
+}
+.des-3{
+    transform: translateY(30px);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+
+
+
