@@ -1,0 +1,298 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+
+
+:root{
+
+--Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+--Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+--Grayish-Blue: hsl(212, 23%, 69%);
+--Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+
+
+.container{
+    width: 318px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+
+}
+
+.details{
+    padding: 25px 30px 10px;
+}
+
+.image img{
+    height: 200px;
+    width: 318px;
+
+}
+
+.head-para h2{
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+}
+
+.head-para p{
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: var(--Desaturated-Dark-Blue);
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.person-details{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+
+}
+
+
+.person{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px
+}
+.person h3{
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+
+}
+.person p{
+    color: var(--Desaturated-Dark-Blue);
+    font-weight: 500;
+
+}
+.person img{
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+
+}
+.share{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: hsla(212, 23%, 69%, 0.2);
+    cursor: pointer;
+}  
+.share-details{
+    position: absolute;
+    transition: all 0.4s ease;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 318px;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    height: 0px;
+    padding:0px 30px 0px ;
+    transform: translateY(0px);    
+}
+
+.hide{
+    height: 70px;
+    transform: translateY(-70px);    
+} 
+
+.share-hide{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:hsla(212, 23%, 69%, 0.872) ;
+    border-radius: 50%;
+    cursor: pointer;
+} 
+.share-hide img{
+    color: white;
+}
+
+
+
+.share-con{
+    display: flex;
+    width: 175px;
+    justify-content: space-between;
+
+}
+.share-con h5{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--Grayish-Blue);
+    letter-spacing: 4px;
+}
+
+
+.icons ul{
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.icons li{
+    list-style: none;
+}
+
+.triangle-down{
+    display: none;
+}
+
+@media(min-width:900px){
+
+    .container{
+        display: flex;
+        overflow: visible;
+        width: 730px;
+        height: 280px;
+    
+    }
+    .share-hide{
+      display: none;
+    }
+
+    .share-details{
+        height: 0px;
+        width: 250px;
+        right: -80px;
+        bottom: 90px;
+        border-radius: 10px;
+        
+    }
+
+    .head-para h2{
+        font-size: 20px;
+        
+    }
+    .image{
+        border-radius: 10px 0 0 10px;
+        width: 818px;
+        overflow: hidden ;
+
+    }
+    .image img{
+        height: 280px;
+        width: 368px;
+    
+    }
+
+    .triangle-down {
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right:12px solid transparent;
+        border-top: 15px solid var(--Very-Dark-Grayish-Blue);
+        bottom: 76px;
+        right: 32px;
+        position: absolute;
+    }
+    
+    .hide{
+        height: 45px;
+        transform: translateY(0px);
+    }
+
+    .hide-arrow{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
