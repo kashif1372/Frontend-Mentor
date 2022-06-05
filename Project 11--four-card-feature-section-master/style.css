@@ -121,7 +121,27 @@ main{
     background-color: var(--Blue);
 }
 
+@media(max-width:375px){
+    .main-container{
+        display:block;
+        
+    }
+    main{
+        height: 150vh;
+        width: 100vw;
+    }
 
+    .heading p{
+        width: 300px;
+    }
+    .main-heading{
+        font-size: 25px;
+    }
+    .heading h1{
+        font-size: 25px;
+    }
+    
+}
 
 
 
