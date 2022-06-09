@@ -1,0 +1,132 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+
+.supermain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con{
+    background-color: hsl(216, 50%, 16%);
+    margin: 90px 0px;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 640px;
+
+}
+.ment{
+    width: 330px;
+    padding: 15px;
+    /* overflow: hidden; */
+    position: relative;
+}
+.ment img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    top: 15px;
+    cursor: pointer;
+    width: 300px;
+    height:300px;
+    border-radius: 10px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.layer img{
+    width: 40px;
+}
+.layer:hover{
+    background-color: hsla(178, 100%, 50%, 0.39);
+    opacity: 1;
+}
+
+.menthead {
+    width: 330px;
+    padding: 15px;
+}
+.menthead h2{
+    margin: 10px 0;
+    color: hsl(0, 0%, 100%);
+}
+.menthead p{
+    margin: 10px 0;
+    color: hsl(215, 51%, 70%);
+}
+
+.submain{
+    padding: 15px;
+    width:330px;
+    display: flex;
+    justify-content: space-between;
+}
+.sub{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16ps;
+    font-weight: 300;
+}
+.sub img{
+    padding:0 5px 0 0;
+}
+#first{
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+#second{
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+}
+
+.submaindown{
+    padding: 15px;
+    width:300px;
+    display: flex;
+    justify-content:flex-start;
+}
+hr{
+    margin: 15px 15px;
+    color: hsl(215, 51%, 70%);
+    font-size: 1px;
+
+}
+.submaindown img{
+    width: 45px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transform: translateY(-8px);
+}
+.submaindown p{
+    color: hsl(215, 51%, 70%);
+    padding-left: 15px;
+
+}
+.submaindown a{
+    padding-left: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+.submaindown a:hover{
+    color: hsl(178, 100%, 50%);
+}
+.menthead h2:hover{
+    color: hsla(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+
+
+
