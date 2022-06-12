@@ -1,0 +1,95 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-Blue);
+    padding: 1rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    min-height: 20rem;
+    width: 30rem;
+    border-radius: 1rem;
+    background-color: var(--Dark-Grayish-Blue);
+    position: relative;
+}
+
+.container p{
+    margin-top: 1.5rem;
+    letter-spacing: 0.3rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--Neon-Green);
+
+}
+
+.container h1{
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    color: var(--Light-Cyan);
+    text-align: center;
+
+}
+
+.container picture{
+    margin-bottom: 3rem;
+}
+
+.container button{
+    position: absolute;
+    background-color: var(--Neon-Green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    bottom: -1.7rem;
+    cursor: pointer;
+    
+}
+
+.container button:hover{
+    background-color:hsl(150, 97%, 70%); 
+    box-shadow: 0 0 20px 10px hsla(150, 97%, 70%, 0.5) ;
+}
+
+
+@media(max-width:475px){
+    .container{
+      
+        width: 20rem;
+       
+    }
+}
+
+
