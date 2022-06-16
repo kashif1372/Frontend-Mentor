@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<main>
+  <div class="logo"><img src="./images/logo.svg" alt=""></div>
+  <div class="container">
+    <div class="container-left">
+<div class="top">
+  <p>Bill</p>
+  <div class="text bill">
+    <input type="text" placeholder="0" name="bill" id="bill">
+    <img src="./images/icon-dollar.svg" alt="">
+  </div> 
+</div>     
+<div class="center">
+  <p>Select Tip %</p>
+<div class="tip-options">
+  <div class="tip tip-perc">5%</div>
+  <div class="tip tip-perc">10%</div>
+  <div class="tip tip-perc tip-active">15%</div>
+  <div class="tip tip-perc">25%</div>
+  <div class="tip tip-perc">50%</div>
+  <div class="tip custom">
+    <input type="text" placeholder="Custom" name="custom" id="custom">
+  </div>
+</div>
+</div>
+<div class="bottom">
+<div class="para">
+  <p>Number of People</p>
+  <div class="error-msg hide">
+    <p>Can't be zero</p>
+  </div>
+</div>
+<div class="text people">
+<input type="text" placeholder="1" name="people" id="people">
+<img src="./images/icon-person.svg" alt="">
+
+</div>
+</div>
+</div>
+
+    <div class="container-right">
+      <div class="content">
+        <div class="amount">
+          <p>Tip Amount</p>
+          <p>/ person</p>
+        </div>
+        <div class="dollar">
+        <h1>$<span id="tip-amount">0.00</span></h1>
+        </div>
+      </div>
+      <div class="content">
+        <div class="amount">
+          <p>Total</p>
+          <p>/ person</p>
+        </div>
+        <div class="dollar">
+        <h1>$<span id="total">0.00</span></h1>
+        </div>
+      </div>
+    <button type="reset" id="reset">RESET</button>
+
+    </div>
+    
+  </div>
+</main>
+  
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://app.netlify.com/teams/kashif1372/overview">Kashif Sheikh</a>.
+  </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+:root{
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--Light-grayish-cyan);
+    gap: 50px;
+}
+
+.logo{
+    margin-top: 50px;
+}
+
+.container{
+    border-radius: 1rem;
+    background-color: var(--White);
+    height: 350px;
+    width: 700px;
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+
+.container-left{
+    width: 50%;
+
+}
+
+.container-left p{
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: var(--Dark-grayish-cyan);
+
+}
+
+
+.text{
+    position: relative;
+}
+.text input{
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background-color: var(--Very-light-grayish-cyan);
+    padding: 4px 8px;
+    width: 100%;
+    text-align: right;
+    font-size: 20px;
+}
+
+.text img{
+    left: 0px;
+    padding: 11px;
+    position: absolute;
+}
+
+.tip-options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 7px;
+}
+.tip{
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    color: var(--White);
+    background-color: var(--Very-dark-cyan);
+    cursor: pointer;
+}
+
+.tip:hover{
+    background-color:hsl(172, 67%, 45%);
+    color: var(--Very-dark-cyan) ;
+}
+
+.tip-active{
+    background-color:hsl(172, 67%, 45%);
+    color: var(--Very-dark-cyan) ;
+}
+
+.custom{
+    background-color: transparent;
+    padding: 0px;
+}
+.custom:hover{
+    background-color:transparent;
+}
+
+.custom input{
+    font-size: 18px;
+    text-align: right;
+    width: 96px;
+    padding: 2px;
+    border-radius: 4px;
+    color: var(--Dark-grayish-cyan);
+    background-color: var(--Very-light-grayish-cyan) ;
+    border: 2px solid transparent;
+}
+
+.custom input::placeholder{
+    text-align: center;
+
+}
+
+.center{
+    margin: 1.5rem 0;
+}
+
+.para{
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-msg p{
+    color: rgb(233, 132, 95);
+}
+
+.bill input:focus{
+    outline: none;
+    border:2px solid hsl(172, 67%, 45%) ;
+}
+.people input:focus{
+    outline: none;
+    border:2px solid hsl(172, 67%, 45%) ;
+}
+.people.active input:focus{
+    outline: none;
+    border:2px solid rgb(233, 132, 95) ;
+}
+.custom input:focus{
+    outline: none;
+    border:2px solid hsl(172, 67%, 45%) ;
+}
+
+
+
+
+
+.container-right{
+    padding: 30px;
+    border-radius: 0.8rem;
+    width: 50%;
+    background-color: var(--Very-dark-cyan);
+
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+
+.content h1{
+    color: var(--Strong-cyan);
+
+}
+.amount p:first-child{
+    color: var(--White);
+}
+.amount p{
+    color: var(--Grayish-cyan);
+    font-size: 11px;
+}
+.amount img{
+    height: 20px;
+}
+
+
+.container-right button{
+    border: none;
+    border-radius: 3px;
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    padding: 7px;
+    margin-top: 4.2rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.container-right button:hover{
+    background-color:hsl(172, 59%, 68%);
+}
+
+
+.hide{
+    display: none;
+}
+
+@media(max-width:475px){
+    .container{
+        height: auto;
+        width: 100vw;
+        flex-direction: column;
+    }
+    .container-left{
+        width: 100%;
+    }
+    .container-right{
+        width: 100%;
+    }
+
+}
+
+
+
+
